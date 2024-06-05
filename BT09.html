@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myFilter(arr, number, callback) {
+        let count = 0;
+        let arrNumber = [];
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === number) {
+            count++;
+            arrNumber.push(arr[i]);
+          }
+        }
+        if (count === 0) {
+          callback(arrNumber);
+        } else {
+          callback(arrNumber);
+        }
+      }
+      myFilter([1, 2, 3, 4, 5, 2], 6, (arr) => {
+        console.log(arr);
+      });
+    </script>
+  </body>
+</html>
